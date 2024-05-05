@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: UserDeleteApiTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.943 s <<< FAILURE! - in UserDeleteApiTest
+testDeleteExistingUser  Time elapsed: 0.525 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at UserDeleteApiTest.testDeleteExistingUser(UserDeleteApiTest.java:51)
+
