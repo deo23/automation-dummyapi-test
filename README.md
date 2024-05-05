@@ -68,6 +68,27 @@ automation-dummyapi-test
       └─ UserGetApiTest.class
 ```
 
+- `pom.xml`: File konfigurasi Maven yang mengatur dependensi, plugin, dan konfigurasi proyek lainnya.
+- `src/`: Direktori utama yang berisi kode sumber proyek.
+  - `main/`: Direktori untuk kode sumber utama proyek.
+    - `java/`: Direktori untuk kode sumber Java.
+      - `com/`: Direktori root untuk struktur paket.
+        - `dummyapi/`: Paket yang berisi kode sumber proyek.
+    - `resources/`: Direktori untuk sumber daya proyek, seperti file konfigurasi.
+  - `test/`: Direktori untuk unit test.
+    - `java/`: Direktori untuk kode sumber unit test Java.
+      - File-file unit test, seperti `CreateUserDataTest.java`, `UpdateUserDataTest.java`, `UserDeleteApiTest.java`, dan `UserGetApiTest.java`.
+
+- `target/`: Direktori yang berisi hasil dari proses pembangunan proyek.
+  - `classes/`: Direktori yang berisi file kelas hasil kompilasi.
+    - `com/`: Direktori yang berisi struktur paket kelas.
+      - `dummyapi/`: Direktori yang berisi kelas-kelas dari paket `dummyapi`.
+  - `generated-sources/`: Direktori yang berisi sumber daya yang dihasilkan secara otomatis oleh proses kompilasi atau pembangunan.
+  - `generated-test-sources/`: Direktori yang berisi sumber daya yang dihasilkan secara otomatis untuk pengujian.
+  - `maven-status/`: Direktori yang berisi status proyek dari plugin Maven.
+  - `surefire-reports/`: Direktori yang berisi laporan hasil pengujian dari Surefire plugin.
+  - `test-classes/`: Direktori yang berisi file kelas unit test hasil kompilasi.
+
 ## How To Run Execution Testing
 1. Buka proyek di IDE Anda.
 2. Jalankan unit test yang terletak di direktori `test/`.
